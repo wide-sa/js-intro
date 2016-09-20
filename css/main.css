@@ -1,0 +1,346 @@
+/*-----------------------*\
+   #RESET
+\*-----------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+}
+
+
+/*-----------------------*\
+   #FONTS
+\*-----------------------*/
+
+@font-face {
+	font-family: 'Neutra Text';
+	src: url('fonts/NeutraText-Bold.eot');
+	src: url('fonts/NeutraText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/NeutraText-Bold.woff') format('woff'),
+		url('fonts/NeutraText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+/*-----------------------*\
+   #CUSTOM
+\*-----------------------*/
+
+body {
+	font-family: 'Neutra Text', sans-serif;
+	min-height: 740px;
+	background: #f0db4e;
+	color: #323230;
+}
+
+/*
+	Now let's bring some text styles back ...
+*/
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+/*
+	... and give links a nice look.
+*/
+a {
+	color: #D81B60;
+	text-decoration: none;
+	padding: 0 0.1em;
+}
+
+a:hover,
+a:focus,
+strong {
+	color: #AD1457;
+}
+li{
+	margin-top: 1rem;
+	font-size: 2.2rem;
+}
+
+.list-disc{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.inline-list{
+	margin: 4rem 0 2rem;
+	padding: 1rem;
+	text-align: center;
+	background: #343434;
+	border-radius: 5px;
+	color: #f0db4e;
+}
+.inline-list li{
+	margin: 1rem;
+	display: inline-block;
+}
+.text-center{
+	text-align: center;
+}
+
+.link{
+	font-size: 1.5rem;
+}
+
+/*-----------------------*\
+   #SLIDE
+\*-----------------------*/
+
+.step {
+	position: relative;
+	width: 900px;
+	padding: 40px;
+	margin: 20px auto;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	-ms-box-sizing:     border-box;
+	-o-box-sizing:      border-box;
+	box-sizing:         border-box;
+
+	font-size: 48px;
+	line-height: 1.5;
+}
+
+.impress-enabled .step {
+	margin: 0;
+	opacity: 0.3;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition:    opacity 1s;
+	-ms-transition:     opacity 1s;
+	-o-transition:      opacity 1s;
+	transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+.slide {
+	display: block;
+
+	width: 1200px;
+	height: 700px;
+	padding: 40px 60px;
+
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: -1px;
+}
+
+
+/*-----------------------*\
+   #LOGO
+\*-----------------------*/
+
+
+.logo{
+	position: relative;
+	padding: 5rem 1rem 0 6rem;
+	background: #323230;
+	font-size: 11rem;
+	line-height: 12rem;
+	color: #f0db4e;
+}
+	.rhino{
+		position: absolute;
+		bottom: 99%;
+		right: -2rem;
+		display: block;
+		width: 170px;
+	}
+
+
+	.page-info{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		transition: opacity 1s 0.5s;
+		z-index: 1;
+	}
+
+	.title-page-info{
+		position: absolute;
+		right: 100%;
+		top: 0;
+		margin-right: 1rem;
+		line-height: 8rem;
+		font-size: 3rem;
+		overflow: hidden;
+		text-transform: uppercase;
+		white-space: nowrap;
+		transition: all 0.7s cubic-bezier(0.74, 1.65, 0.57, 0.92);
+	}
+		.title-page-info.is-hidden{
+			right: 0;
+			transform: translateX(100%);
+		}
+	.page-info .logo{
+		font-size: 4rem;
+		padding: 2rem 0.5rem 0 2.5rem;
+		line-height: 4rem;
+	}
+	.page-info .rhino{
+		left: -1rem;
+		width: 60px;
+		transform: scaleX(-1);
+	}
+	.impress-on-intro .page-info{
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+
+/*-----------------------*\
+   #STEP INTRO
+\*-----------------------*/
+
+.intro-step{
+	text-align: center;
+}
+.intro-step:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.intro-step > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+	.title-intro{
+		margin-left: 3rem;
+		font-size: 5rem;
+		line-height: 6rem;
+		text-align: left;
+	}
+
+
+/*-----------------------*\
+   #STEP SUMMARY
+\*-----------------------*/
+
+.item-summary{
+	margin-bottom: 3rem;
+}
+.title-item-summary{
+	font-size: 4rem;
+	line-height: 5rem;
+}
+
+
+/*-----------------------*\
+   #STEP ORIGEM
+\*-----------------------*/
+
+.origem-step{
+	text-align: center;
+}
+.origem-step:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.origem-step > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.card{
+	display: inline-block;
+	padding: 0 0.2rem;
+	background: #323230;
+	color: #f0db4e;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+.card + .card{
+	margin-left: 3rem;
+}
+	.title-card{
+		margin-bottom: 0.5rem;
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	.image-card{
+		display: block;
+		margin: 0.5rem 0;
+		width: 400px;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.desc-card{
+		margin-bottom: 0.5rem;
+		font-size: 1.8rem;
+	}
+
+.desc-origem{
+	margin-left: 3rem;
+	text-align: left;
+}
+.desc-origem h4{
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+}
+.desc-origem h3{
+	font-size: 3rem;
+	line-height: 4rem;
+}
+.desc-origem h2{
+	font-size: 4rem;
+	line-height: 5rem;
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<title>JS - Que bicho é esse?</title>
+
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="js/styles/monokai.css" rel="stylesheet" />
+
+	<link rel="shortcut icon" href="favicon.png" />
+</head>
+
+<body>
+	<div class="page-info">
+		<span id="title-page-info" class="title-page-info">Summary</span>
+		<h1 class="logo">
+			<img src="images/rhino.png" class="rhino">
+			JS
+		</h1>
+	</div>
+
+	<div id="impress">
+		<div id="intro" class="intro-step step slide" data-x="0" data-y="0">
+			<h1 class="logo logo-page-info">
+				<img src="images/rhino.png" class="rhino">
+				JS
+			</h1>
+			<h2 class="title-intro">Que bicho <br>é esse?</h2>
+		</div>
+
+		<div id="summary" class="step slide" data-x="1500" data-y="0" data-group="Summary">
+			<ul>
+				<li class="item-summary">
+					<h2 class="title-item-summary">Origem</h2>
+					<span>Onde surgiu, o quê come, onde vive</span>
+				</li>
+				<li class="item-summary">
+					<h2 class="title-item-summary">Fenótipo</h2>
+					<span>Como vive, limitações e peculiaridades da espécie</span>
+				</li>
+				<li class="item-summary">
+					<h2 class="title-item-summary">Mutação</h2>
+					<span>A evolução do material genético</span>
+				</li>
+			</ul>
+		</div>
+
+		<div id="origem" class="origem-step step slide" data-x="3000" data-y="0" data-group="origem">
+			<div class="card">
+				<div class="title-card">1995</div>
+				<div class="image-card" style="background-image: url(images/brendan-eich.jpg)"></div>
+				<div class="desc-card">Brendan Eich</div>
+			</div>
+			<div class="desc-origem">
+				<ol>
+					<li><h4>Mocha</h4></li>
+					<li><h3>Livescript</h3></li>
+					<li><h2>Javascript</h2></li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="origem-2" class="origem-step step slide" data-x="4500" data-y="0" data-group="origem">
+			<div class="card">
+				<div class="title-card">1996</div>
+				<div class="image-card" style="background-image: url(images/bill-gates.jpg)"></div>
+				<div class="desc-card">Bill Gates</div>
+			</div>
+			<div class="desc-origem">
+				<h2>JSScript</h2>
+				<h2>IE 3.0</h2>
+			</div>
+		</div>
+
+		<div id="origem-3" class="origem-step step slide" data-x="6000" data-y="0" data-group="origem">
+			<div class="card">
+				<div class="title-card">1996</div>
+				<div class="image-card" style="background-image: url(images/ecma.jpg)"></div>
+				<div class="desc-card">ECMA-262</div>
+			</div>
+			<div class="desc-origem">
+				<h4>Associação Internacional</h4>
+				<h2>ECMAScript</h2>
+			</div>
+		</div>
+
+		<div id="onde-vive" class="step slide" data-x="7500" data-y="0" data-group="Client Side">
+			<ul>
+				<li class="item-summary">
+					<h2 class="title-item-summary">Interpretado ou Compilado?</h2>
+					<ul>
+						<li>V8 - Chrome e Opera</li>
+						<li>TraceMonkey - Firefox</li>
+						<li>Chakra - IE9</li>
+						<li>Nitro - Safari</li>
+					</ul>
+				</li>
+				<li class="item-summary">
+					<h2 class="title-item-summary">Browser</h2>
+					<ul>
+						<li>Implementação das features</li>
+						<li>Gerenciamento de memória</li>
+						<li>Customização do usuário</li>
+						<li>Atualização de versão</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div id="dom" class="step slide" data-x="9000" data-y="0" data-group="DOM">
+			<div class="text-center">
+				<h2 class="title-item-summary">DOM Tree</h2>
+				<img src="images/xml_doma2.gif" alt="" style="margin-top: 5rem">
+			</div>
+		</div>
+
+<div id="document" class="step slide" data-x="10500" data-y="0" data-group="DOM">
+			<h2 class="title-item-summary">document</h2>
+			<ul>
+				<li>
+					Métodos para acesso e manipulação<br>
+<pre><code class="js">document.appendChild();
+document.getElementById();
+document.getElementsByClassName();
+</code></pre>
+				</li>
+				<li>Atributos do documento<br>
+<pre><code class="js">document.title;
+document.charset;
+document.cookie;
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="api" class="step slide" data-x="12000" data-y="0" data-group="API">
+			<h2 class="title-item-summary">API</h2>
+			<span>Os browsers disponibilizam inúmeras interfaces para manipulação</span>
+			<ul class="inline-list">
+				<li>JSON</li>
+				<li>WebGL</li>
+				<li>SVG</li>
+				<li>Promise</li>
+				<li>File</li>
+				<li>Audio</li>
+				<li>Navigator</li>
+				<li>Animation</li>
+				<li>Cache</li>
+				<li>WebSocket</li>
+				<li>LocalStorage</li>
+				<li>Notification</li>
+				<li>USB</li>
+				<li>Canvas</li>
+				<li>Crypto</li>
+			</ul>
+			<div class="link text-center">
+				<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API">https://developer.mozilla.org/en-US/docs/Web/API</a>
+			</div>
+		</div>
+
+		<div id="server-side" class="origem-step step slide" data-x="13500" data-y="0" data-group="Server Side">
+			<div class="card">
+				<div class="title-card">2009</div>
+				<div class="image-card" style="background-image: url(images/nodejs.png);"></div>
+				<div class="desc-card">V8</div>
+			</div>
+			<div class="desc-origem">
+				<ol>
+					<li><h3>Non-blocking Thread</h3></li>
+					<li><h3>Performance</h3></li>
+					<li><h3>SEO</h3></li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="fenotipo" class="step slide" data-x="15000" data-y="0" data-group="Fenótipo">
+			<h2 class="title-item-summary">Tipagem</h2>
+			<ul>
+				<li> Fraca
+<pre><code class="js">var string = "text";
+console.log(10 + string); // "10text"
+</code></pre>
+				</li>
+				<li>
+					Dinâmica
+<pre><code class="js">var string = "text";
+string = 10;
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="orientada-objeto" class="step slide" data-x="16500" data-y="0" data-group="Fenótipo">
+			<h2 class="title-item-summary">Orientada a Objeto?</h2>
+			<ul>
+				<li><i>"Linguagem de script com orientação a objetos baseada em <strong>protótipos</strong>"</i><br><br></li>
+				<li>Tudo é, ou pode ser, manipulado como, <strong>objeto</strong><br>
+<pre><code class="js">String instanceof Object;//true
+Array instanceof Object; //true
+Number instanceof Object; //true
+Function instanceof Object; //true
+</code></pre>
+<pre><code class="js">false.toString() //"false"</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="prototype" class="step slide" data-x="18000" data-y="0" data-group="Fenótipo">
+			<h2 class="title-item-summary">Prototype</h2>
+			<ul>
+				<li>Referência única do construtor</li>
+				<li>
+<pre><code class="js">var myObj = {};
+myObj.__proto__; // Métodos e propriedades do Object
+myObj.__proto__.isPrototypeOf(Object) // true
+</code></pre>
+				</li>
+				<li>Prototype da instância referencia o prototype do <strong>constructor</strong></li>
+			</ul>
+		</div>
+
+		<div id="encadeamento" class="step slide" data-x="19500" data-y="0" data-group="Fenótipo">
+			<h2 class="title-item-summary">Encadeamento</h2>
+			<ul>
+				<li>Toda a cadeia <strong>herda</strong> os métodos e propriedades</li>
+				<li>
+<pre><code class="js">var frutas = [ 'morango', 'manga', 'laranja' ];
+frutas.reverse(); // método herdado de Array
+frutas.hasOwnProperty('length'); // método herdado de Object
+
+Object.getPrototypeOf(frutas); // []
+Object.getPrototypeOf(Object.getPrototypeOf(frutas)); // Object
+</code></pre>
+				</li>
+				<li>O Javascript percorre recursivamente a cadeia</li>
+			</ul>
+		</div>
+
+		<div id="heranca" class="step slide" data-x="21000" data-y="0" data-group="Herança">
+			<h2 class="title-item-summary">Herança em Class</h2>
+			<ul>
+				<li>
+<pre><code class="java">public abstract class Animal{
+  public void nascer(){/*...*/}
+}
+
+class Rhino extends Animal{
+  public void comer(){/*...*/}
+}
+class Fish extends Animal{
+  public void nadar(){/*...*/}
+}</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="heranca-prototype" class="step slide" data-x="22500" data-y="0" data-group="Herança">
+			<h2 class="title-item-summary">Herança em Prototype</h2>
+			<ul>
+				<li>
+<pre><code class="js">var Animal = {
+  nascer: function(){/*...*/}
+};
+var Rhino = Object.create(Animal, {
+  comer: {
+    value: function(){/*...*/}, // Function, Object, Number ...
+    writable: false, // Protect
+    enumerable: false, // Iterar em loops
+    configurable: false, // Alterar atributos (writable, enumerable e configurable)
+    set: function(value){peso = value}, //Rhino.peso = 12
+    get: function(){return peso * 1000} // Rhino.peso
+  }
+});
+var Fish = Object.create(Animal, /*...*/);
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="super-prototype" class="step slide" data-x="24000" data-y="0" data-group="Herança">
+			<h2 class="title-item-summary">Método Super</h2>
+			<ul>
+				<li>
+<pre><code class="js">Object.defineProperty(Rhino, 'nascer', {
+  value: function(){/*...*/}
+});
+Rhino.nascer(); // dispara nova função definida
+</code></pre>
+<pre><code class="js">Object.getPrototypeOf(Rhino).nascer(); // Animal.nascer()
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="dynamic-prototype" class="step slide" data-x="25500" data-y="0" data-group="Herança">
+			<h2 class="title-item-summary">Dynamic Prototype</h2>
+			<ul>
+				<li>
+<pre><code class="js">Rhino.morrer(); // undefined
+
+Object.defineProperty(Animal, 'morrer', {
+  value: function(){/*...*/}
+});
+
+Rhino.morrer(); // dispara função definida
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="function" class="step slide" data-x="25500" data-y="0" data-group="Functions">
+			<h2 class="title-item-summary">First Class Functions</h2>
+			<ul>
+				<li>
+<pre><code class="js">var myVar = function myFunc(){/*...*/};
+var myObj = {
+  myFunc : function myFunc(){/*...*/}
+};
+</code></pre>
+
+<pre><code class="js">function myFunc(){/*...*/};
+function myFunc2(myFunc){/*...*/};
+</code></pre>
+
+<pre><code class="js">function myFunc(){
+  return function myFunc2(){/*...*/}
+};
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="overloading" class="step slide" data-x="25500" data-y="0" data-group="Overloading">
+			<h2 class="title-item-summary">Overloading forjado</h2>
+			<ul>
+				<li>
+<pre><code class="js">function multiple(){
+  var length = arguments.length;
+  var total = 1;
+  if(length>0) {
+    for(var i = 0; i < length; i+=1){
+      total = total * arguments[i];
+    }
+    return total;
+  }
+  return 0;
+}
+console.log(multiple()); //0
+console.log(multiple(2)); //2
+console.log(multiple(2,4,8,2)); //128
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="closure" class="step slide" data-x="25500" data-y="0" data-group="Closure">
+			<h2 class="title-item-summary">Closure</h2>
+			<ul>
+				<li>Escopo
+
+<pre><code class="js">function makeAdder(x){
+  return function(y){
+    return x + y;
+  };
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="closure-2" class="step slide" data-x="25500" data-y="0" data-group="Closure">
+			<h2 class="title-item-summary">Closure</h2>
+			<ul>
+				<li>
+<pre><code class="js">var makeCounter = function() {
+  var privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
+  }
+  return {
+    increment: function() {
+      changeBy(1);
+    },
+    decrement: function() {
+      changeBy(-1);
+    },
+    value: function() {
+      return privateCounter;
+    }
+  }
+};
+
+var Counter1 = makeCounter();
+var Counter2 = makeCounter();
+console.log(Counter1.value()); //0
+Counter1.increment();
+Counter1.increment();
+console.log(Counter1.value()); //2
+Counter1.decrement();
+console.log(Counter1.value()); //1
+console.log(Counter2.value()); //0
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="closure-3" class="step slide" data-x="25500" data-y="0" data-group="Closure">
+			<h2 class="title-item-summary">Closure</h2>
+			<ul>
+				<li>
+<pre><code class="js">(function($){/*...*/
+}(jQuery))</code></pre>
+<pre><code class="js">var data = {success: false}
+console.log(data.success) // false
+if(true){
+  (function() {
+    var data = {success: true};
+    console.log(data.success) // true
+  }());
+}
+console.log(data.success) // false
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="exemplo-closure" class="step slide" data-x="25500" data-y="0" data-group="Closure">
+			<h2 class="title-item-summary">Exemplo</h2>
+			<ul>
+				<li>
+<pre><code class="js">//Bad
+Diario = {
+  init : function(){
+  	var self = this;
+  	/*...*/
+ }}
+};
+Diario.init();
+
+//Good
+Diario = (function(){
+  	var f;
+  	/*...*/
+}());
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="commonjs" class="step slide" data-x="25500" data-y="0" data-group="Mutação">
+			<h2 class="title-item-summary">CommonJS</h2>
+			<ul>
+				<li>Server side
+<pre><code class="js">// foo.js
+module.exports = 'foo';
+
+// app.js
+var foo = require('foo');
+console.log(foo); // foo
+</code></pre>
+				</li>
+				<li>Modularização <strong>-</strong> Overhead <strong>=</strong> HTTP/2</li>
+			</ul>
+		</div>
+
+		<div id="amd" class="step slide" data-x="25500" data-y="0" data-group="Modularização">
+			<h2 class="title-item-summary">AMD</h2>
+			<ul>
+				<li>Client side
+<pre><code class="js">// bar.js
+define(function(){
+  return 'bar';
+});
+
+// app.js
+require(['bar'], function(bar){
+  console.log(bar); // bar
+})
+</code></pre>
+				</li>
+				<li>RequireJS</li>
+			</ul>
+		</div>
+
+		<div id="es6" class="step slide" data-x="25500" data-y="0" data-group="Modularização">
+			<h2 class="title-item-summary">ES6/ECMA2015</h2>
+			<ul>
+				<li>
+<pre><code class="js">// math.js
+function sum(){/*...*/}
+function multiple(){/*...*/}
+export default math;
+export {sum, multiple};
+
+// app.js
+import { sum as mySum } from './math';
+mySum();
+</code></pre>
+				</li>
+			</ul>
+		</div>
+
+		<div id="referencias" class="step slide" data-x="25500" data-y="0" data-group="Referências">
+			<h2 class="title-item-summary">Referências</h2>
+			<ul>
+				<li><a target="_blank" href="http://imasters.com.br/front-end/javascript/javascript-20-anos-de-historia-e-construcao-da-web/" class="link">http://imasters.com.br/front-end/javascript/javascript-20-anos-de-historia-e-construcao-da-web/</a></li>
+				<li><a target="_blank" href="http://tableless.com.br/tenha-o-dom/" class="link">http://tableless.com.br/tenha-o-dom/</a></li>
+				<li><a target="_blank" href="http://loopinfinito.com.br/2012/05/04/heranca-em-javascript-parte-1/" class="link">http://loopinfinito.com.br/2012/05/04/heranca-em-javascript-parte-1/</a></li>
+				<li><a target="_blank" href="http://leobetosouza.com.br/Palestra-Peculiaridades-do-JavaScript/" class="link">http://leobetosouza.com.br/Palestra-Peculiaridades-do-JavaScript/</a></li>
+				<li><a target="_blank" href="http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/" class="link">http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/</a></li>
+				<li><a target="_blank" href="http://programadorobjetivo.co/javascript-functions/" class="link">http://programadorobjetivo.co/javascript-functions/</a></li>
+				<li><a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures" class="link">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures</a></li>
+				<li><a target="_blank" href="http://blog.da2k.com.br/2015/01/18/requirejs-carregando-javacript-sob-demanda/" class="link">http://blog.da2k.com.br/2015/01/18/requirejs-carregando-javacript-sob-demanda/</a></li>
+				<li><a target="_blank" href="https://braziljs.org/blog/modulos-no-javascript-moderno/" class="link">https://braziljs.org/blog/modulos-no-javascript-moderno/</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/impress.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script>
+
+
+		var steps = document.querySelectorAll('.step'),
+			stepsCount = steps.length;
+
+		steps.forEach(function(v,i){
+			v.setAttribute('data-x', i*1500);
+			if(stepsCount === (i + 1))impress().init();
+		})
+
+
+		var impressEl = document.getElementById('impress'),
+			lastStepGroup = false;
+
+		impressEl.addEventListener('impress:stepleave', function(event, s){
+			var el = event.target,
+				group = event.detail.nextStep.getAttribute('data-group');
+
+			if(lastStepGroup === group)return;
+			var title = document.getElementById('title-page-info')
+			title.setAttribute('class', 'title-page-info is-hidden');
+		});
+		impressEl.addEventListener('impress:stepenter', function(event){
+			var el = event.target;
+				group = el.getAttribute('data-group');
+
+			if(lastStepGroup === group)return;
+			var title = document.getElementById('title-page-info')
+			title.textContent = group;
+			title.setAttribute('class', 'title-page-info');
+
+			lastStepGroup = group;
+		});
+
+		hljs.initHighlightingOnLoad();
+	</script>
+</body>
+</html>
